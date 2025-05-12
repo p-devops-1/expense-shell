@@ -5,8 +5,8 @@ Print_Task_Heading (){
 
 check_status() {
   if [ $1 -eq 0 ]; then
-    echo success
+    echo -e "\e[32mSUCCESS\e[0m"
     else
-      failure
+      echo -e "\e[31mFAILURE\e[0m"
       fi
 }
